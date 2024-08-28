@@ -14,6 +14,9 @@
 		D0AFE9CF2C7FBAA30014AFD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE9CE2C7FBAA30014AFD7 /* AppDelegate.swift */; };
 		D0AFE9D12C7FBAAE0014AFD7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE9D02C7FBAAE0014AFD7 /* MapView.swift */; };
 		D0AFE9D42C7FBB0F0014AFD7 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D0AFE9D32C7FBB0F0014AFD7 /* GoogleMaps */; };
+		D0AFE9D62C7FBDCC0014AFD7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE9D52C7FBDCC0014AFD7 /* Environment.swift */; };
+		D0AFE9D82C7FBE9A0014AFD7 /* env.json in Resources */ = {isa = PBXBuildFile; fileRef = D0AFE9D72C7FBE9A0014AFD7 /* env.json */; };
+		D0AFE9DA2C7FBEFB0014AFD7 /* env.example.json in Resources */ = {isa = PBXBuildFile; fileRef = D0AFE9D92C7FBEFB0014AFD7 /* env.example.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D0AFE9C72C7FBA530014AFD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0AFE9CE2C7FBAA30014AFD7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0AFE9D02C7FBAAE0014AFD7 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D0AFE9D52C7FBDCC0014AFD7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D0AFE9D72C7FBE9A0014AFD7 /* env.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = env.json; sourceTree = "<group>"; };
+		D0AFE9D92C7FBEFB0014AFD7 /* env.example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = env.example.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,12 @@
 				D0AFE9CE2C7FBAA30014AFD7 /* AppDelegate.swift */,
 				D0AFE9C02C7FBA520014AFD7 /* chinchorroApp.swift */,
 				D0AFE9C22C7FBA520014AFD7 /* ContentView.swift */,
+				D0AFE9D52C7FBDCC0014AFD7 /* Environment.swift */,
 				D0AFE9D02C7FBAAE0014AFD7 /* MapView.swift */,
 				D0AFE9C42C7FBA530014AFD7 /* Assets.xcassets */,
 				D0AFE9C62C7FBA530014AFD7 /* Preview Content */,
+				D0AFE9D72C7FBE9A0014AFD7 /* env.json */,
+				D0AFE9D92C7FBEFB0014AFD7 /* env.example.json */,
 			);
 			path = chinchorro;
 			sourceTree = "<group>";
@@ -141,6 +150,8 @@
 			files = (
 				D0AFE9C82C7FBA530014AFD7 /* Preview Assets.xcassets in Resources */,
 				D0AFE9C52C7FBA530014AFD7 /* Assets.xcassets in Resources */,
+				D0AFE9D82C7FBE9A0014AFD7 /* env.json in Resources */,
+				D0AFE9DA2C7FBEFB0014AFD7 /* env.example.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +166,7 @@
 				D0AFE9D12C7FBAAE0014AFD7 /* MapView.swift in Sources */,
 				D0AFE9C32C7FBA520014AFD7 /* ContentView.swift in Sources */,
 				D0AFE9C12C7FBA520014AFD7 /* chinchorroApp.swift in Sources */,
+				D0AFE9D62C7FBDCC0014AFD7 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

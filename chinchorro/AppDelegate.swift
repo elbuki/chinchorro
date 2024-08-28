@@ -19,6 +19,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         guard let token = ProcessInfo.processInfo.environment[googleSDKTokenKey] else {
             fatalError("google maps token is not defined")
         }
+        
+        
 
         guard GMSServices.provideAPIKey(token) else {
             fatalError("could not provide the api key to the google maps service")
