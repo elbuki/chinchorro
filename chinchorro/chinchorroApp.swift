@@ -8,7 +8,9 @@
 import SwiftUI
 
 @main
-struct chinchorroApp: App {
+struct ChinchorroApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

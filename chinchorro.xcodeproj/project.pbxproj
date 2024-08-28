@@ -11,6 +11,9 @@
 		D0AFE9C32C7FBA520014AFD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE9C22C7FBA520014AFD7 /* ContentView.swift */; };
 		D0AFE9C52C7FBA530014AFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0AFE9C42C7FBA530014AFD7 /* Assets.xcassets */; };
 		D0AFE9C82C7FBA530014AFD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0AFE9C72C7FBA530014AFD7 /* Preview Assets.xcassets */; };
+		D0AFE9CF2C7FBAA30014AFD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE9CE2C7FBAA30014AFD7 /* AppDelegate.swift */; };
+		D0AFE9D12C7FBAAE0014AFD7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE9D02C7FBAAE0014AFD7 /* MapView.swift */; };
+		D0AFE9D42C7FBB0F0014AFD7 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D0AFE9D32C7FBB0F0014AFD7 /* GoogleMaps */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		D0AFE9C22C7FBA520014AFD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0AFE9C42C7FBA530014AFD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0AFE9C72C7FBA530014AFD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0AFE9CE2C7FBAA30014AFD7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0AFE9D02C7FBAAE0014AFD7 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AFE9D42C7FBB0F0014AFD7 /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +57,10 @@
 		D0AFE9BF2C7FBA520014AFD7 /* chinchorro */ = {
 			isa = PBXGroup;
 			children = (
+				D0AFE9CE2C7FBAA30014AFD7 /* AppDelegate.swift */,
 				D0AFE9C02C7FBA520014AFD7 /* chinchorroApp.swift */,
 				D0AFE9C22C7FBA520014AFD7 /* ContentView.swift */,
+				D0AFE9D02C7FBAAE0014AFD7 /* MapView.swift */,
 				D0AFE9C42C7FBA530014AFD7 /* Assets.xcassets */,
 				D0AFE9C62C7FBA530014AFD7 /* Preview Content */,
 			);
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = chinchorro;
+			packageProductDependencies = (
+				D0AFE9D32C7FBB0F0014AFD7 /* GoogleMaps */,
+			);
 			productName = chinchorro;
 			productReference = D0AFE9BD2C7FBA520014AFD7 /* chinchorro.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = D0AFE9B42C7FBA520014AFD7;
+			packageReferences = (
+				D0AFE9D22C7FBB0F0014AFD7 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			productRefGroup = D0AFE9BE2C7FBA520014AFD7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AFE9CF2C7FBAA30014AFD7 /* AppDelegate.swift in Sources */,
+				D0AFE9D12C7FBAAE0014AFD7 /* MapView.swift in Sources */,
 				D0AFE9C32C7FBA520014AFD7 /* ContentView.swift in Sources */,
 				D0AFE9C12C7FBA520014AFD7 /* chinchorroApp.swift in Sources */,
 			);
@@ -275,21 +291,27 @@
 				DEVELOPMENT_TEAM = R2D8G8MDYK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Chinchorro;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.frostra1n.apps.chinchorro;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.frostra1n.chinchorro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,21 +326,27 @@
 				DEVELOPMENT_TEAM = R2D8G8MDYK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Chinchorro;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.frostra1n.apps.chinchorro;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.frostra1n.chinchorro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0AFE9D22C7FBB0F0014AFD7 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0AFE9D32C7FBB0F0014AFD7 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0AFE9D22C7FBB0F0014AFD7 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D0AFE9B52C7FBA520014AFD7 /* Project object */;
 }
