@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D08FFC612C90F8FA00943EBC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08FFC602C90F8FA00943EBC /* LocationManager.swift */; };
+		D08FFC632C91047300943EBC /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08FFC622C91047300943EBC /* MapCoordinator.swift */; };
 		D0AFE9C12C7FBA520014AFD7 /* chinchorroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE9C02C7FBA520014AFD7 /* chinchorroApp.swift */; };
 		D0AFE9C32C7FBA520014AFD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE9C22C7FBA520014AFD7 /* ContentView.swift */; };
 		D0AFE9C52C7FBA530014AFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0AFE9C42C7FBA530014AFD7 /* Assets.xcassets */; };
@@ -20,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D08FFC5F2C90F86400943EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D08FFC602C90F8FA00943EBC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D08FFC622C91047300943EBC /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
 		D0AFE9BD2C7FBA520014AFD7 /* chinchorro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chinchorro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AFE9C02C7FBA520014AFD7 /* chinchorroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chinchorroApp.swift; sourceTree = "<group>"; };
 		D0AFE9C22C7FBA520014AFD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 		D0AFE9BF2C7FBA520014AFD7 /* chinchorro */ = {
 			isa = PBXGroup;
 			children = (
+				D08FFC5F2C90F86400943EBC /* Info.plist */,
 				D0AFE9CE2C7FBAA30014AFD7 /* AppDelegate.swift */,
 				D0AFE9C02C7FBA520014AFD7 /* chinchorroApp.swift */,
 				D0AFE9C22C7FBA520014AFD7 /* ContentView.swift */,
@@ -72,6 +78,8 @@
 				D0AFE9C62C7FBA530014AFD7 /* Preview Content */,
 				D0AFE9D72C7FBE9A0014AFD7 /* env.json */,
 				D0AFE9D92C7FBEFB0014AFD7 /* env.example.json */,
+				D08FFC602C90F8FA00943EBC /* LocationManager.swift */,
+				D08FFC622C91047300943EBC /* MapCoordinator.swift */,
 			);
 			path = chinchorro;
 			sourceTree = "<group>";
@@ -164,6 +172,8 @@
 			files = (
 				D0AFE9CF2C7FBAA30014AFD7 /* AppDelegate.swift in Sources */,
 				D0AFE9D12C7FBAAE0014AFD7 /* MapView.swift in Sources */,
+				D08FFC632C91047300943EBC /* MapCoordinator.swift in Sources */,
+				D08FFC612C90F8FA00943EBC /* LocationManager.swift in Sources */,
 				D0AFE9C32C7FBA520014AFD7 /* ContentView.swift in Sources */,
 				D0AFE9C12C7FBA520014AFD7 /* chinchorroApp.swift in Sources */,
 				D0AFE9D62C7FBDCC0014AFD7 /* Environment.swift in Sources */,
@@ -303,8 +313,10 @@
 				DEVELOPMENT_TEAM = R2D8G8MDYK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chinchorro/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Chinchorro;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to find the worst places near you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -338,8 +350,10 @@
 				DEVELOPMENT_TEAM = R2D8G8MDYK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chinchorro/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Chinchorro;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to find the worst places near you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
