@@ -19,7 +19,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         manager.delegate = self
     }
     
-    func checkLocationAuthorization() {
+    func checkLocationAuthorization() -> Bool {
         manager.startUpdatingLocation()
         
         switch manager.authorizationStatus {
@@ -31,9 +31,12 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
             print("Location services were denied")
         case .authorizedAlways, .authorizedWhenInUse:
             location = manager.location?.coordinate
+            return true
         default:
             print("Location service is disabled")
         }
+        
+        return false
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {

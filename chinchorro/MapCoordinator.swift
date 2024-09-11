@@ -9,12 +9,14 @@ import GoogleMaps
 
 class MapCoordinator: NSObject, GMSMapViewDelegate {
     
-    func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {
-        print(mapView)
+    var parent: MapView
+    
+    init(parent: MapView) {
+        self.parent = parent
     }
     
-    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
-        print(position.target)
+    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        parent.currentCoordinate = position.target
     }
     
 }
